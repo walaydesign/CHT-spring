@@ -281,7 +281,7 @@ section#footer.no-footer-logo .footer-scroll-top {
   font-weight: 500;
   width: fit-content;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.32);
-  color: var(--white);
+  color: var(--white) !important;
   padding: 0;
   backdrop-filter: blur(5px);
   border: 0 !important;
@@ -323,6 +323,9 @@ section#footer.no-footer-logo .footer-scroll-top {
     padding: 0;
     background-color: transparent;
   }
+  &__text {
+    color: var(--white);
+  }
 }
 
 .point {
@@ -347,6 +350,7 @@ section#footer.no-footer-logo .footer-scroll-top {
     > p {
       font-size: 16px;
       font-weight: 500;
+      color: #fff !important;
       .num {
         font-size: 20px;
         margin-right: 8px;
@@ -632,6 +636,27 @@ section#footer.no-footer-logo .footer-scroll-top {
     z-index: 3;
     pointer-events: none;
   }
+  &-wrapper {
+    &.task, &.wrong {
+      display: none;
+    }
+    &.init {
+      display: block;
+      img {
+        width: calc(100% - 24px);
+        margin: 0 auto 20px;
+        display: block;
+      }
+      button {
+        width: 100%;
+      }
+    }
+    &.wrong {
+      button {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .prize {
@@ -724,7 +749,7 @@ section#footer.no-footer-logo .footer-scroll-top {
     }
     .nav-link {
       width: 100%;
-      padding: 16px 36px 16px 32px;
+      padding: 16px 32px 16px 28px;
       font-size: 24px;
       color: var(--white);
       position: relative;

@@ -140,6 +140,7 @@ header nav .menu-section.active, header nav.show-mobile-search .menu-section.act
   header nav .drop-down-menu li .sub-menu-apply .sub-menu-item li a .menu-apply-note {font-size: .65rem;}
   header nav .drop-down-menu li .sub-menu-help-center {width: 290px;}
   header nav .drop-down-menu li .sub-menu-help-center .menu-apply-item {font-size: .85rem;}
+  /* header nav .drop-down-menu li .sub-menu-apply label>span */
 }
 @media screen and (max-width: 1280px) {
   header nav .drop-down-menu li a.menu-list-title {font-size: .85rem;}

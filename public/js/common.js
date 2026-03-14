@@ -1,8 +1,16 @@
-$(".produce-sec_head").click(function () {
-    $(this).find(".produce-sec_icon").toggleClass("active");
-    $(this).parents(".produce-sec").find(".produce-sec_body").slideToggle(300);
+$(".btn-join").click(function () {
+    $(".lottery-wrapper.init").fadeOut(300);
+    $(".lottery-wrapper.task").fadeIn(300);
 });
 
-$(".btn-play").click(function () {
-    $(this).toggleClass("playing");
-})
+$(".lottery-task__content .btn").click(function () {
+    if (!$(this).hasClass("all")) {
+        $(".lottery-wrapper.task").fadeOut(300);
+    $(".lottery-wrapper.wrong").fadeIn(300);
+    }
+});
+
+$(".btn-next").click(function () {
+  $(".lottery-wrapper.wrong").fadeOut(300);
+  $(".lottery-wrapper.task").fadeIn(300);
+});

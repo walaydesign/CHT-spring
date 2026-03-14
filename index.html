@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./public/css/eshop-2022-rwd.css" />
     <link rel="stylesheet" href="./public/css/render-header-rwd.css" />
     <link rel="stylesheet" href="./public/css/render-footer-rwd.css" />
+    <link rel="stylesheet" href="./public/css/rwd.css" />
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
@@ -27,6 +28,59 @@
     <!-- Header區 -->
     <section class="is-regular" id="header">
       <header class="nav-global-header">
+        <h1 style="display: none"></h1>
+        <!-- Header區 / 站台_S -->
+
+        <div class="corporate-switcher desktop-only">
+          <ul>
+            <li class="sectionlink">
+              <a
+                href="https://www.cht.com.tw/home/consumer"
+                data-click="g-gtm,g-page-event"
+                >個人家庭</a
+              >
+            </li>
+            <li class="sectionlink">
+              <a
+                href="https://www.cht.com.tw/home/enterprise"
+                data-click="g-gtm,g-page-event"
+                >企業服務</a
+              >
+            </li>
+            <li class="sectionlink">
+              <a
+                href="https://www.cht.com.tw/home/campaign/gxc/c1/service/index.html"
+                data-click="g-gtm,g-page-event"
+                >國際服務</a
+              >
+            </li>
+
+            <li class="sectionlink">
+              <a
+                href="https://www.chttl.com.tw/"
+                data-click="g-gtm,g-page-event"
+              >
+                科技研發
+              </a>
+            </li>
+
+            <li class="sectionlink">
+              <a
+                href="https://www.cht.com.tw:443/zh-tw/home/cht"
+                data-click="g-gtm,g-page-event"
+                >關於我們</a
+              >
+            </li>
+            <li class="sectionlink">
+              <a href="/en/home/cht" data-click="g-gtm,g-page-event"
+                >About us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Header區 / 站台_E -->
+
         <nav class="nav-global">
           <div class="logo-section">
             <a
@@ -34,9 +88,26 @@
               href="https://www.cht.com.tw/"
               title="中華電信首頁"
             ></a>
+            <!-- Header區 / 次級Logo_S -->
+            <!--
+                  <span class="logo-line"></span>
+                  <a class="logo-index" href="/" title="次級首頁">次級logo</a>
+-->
+            <!-- Header區 / 次級Logo_E -->
           </div>
         </nav>
       </header>
+      <script src="https://web-eshop.cdn.hinet.net/eshop/js/menu/hide_paragraphs.js"></script>
+      <script src="https://web-eshop.cdn.hinet.net/eshop/js/menu/showmore-desktop.js"></script>
+      <script>
+        $(document).mouseup(function (e) {
+          var container = $(".input-search");
+          if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $(".search-field").removeClass("active");
+            $(".nav-global ").removeClass("show-mobile-search");
+          }
+        });
+      </script>
     </section>
 
     <!-- 主要內容，廠商使用 -->
@@ -136,24 +207,48 @@
         <div class="lottery-task">
           <div class="container">
             <div class="sec">
-              <div class="sec-title">
-                <h2 class="text-border">
-                  何者是從精采生活+訂購影視與加值服務的好處？
-                </h2>
-                <h2 class="text-fill">
-                  何者是從精采生活+訂購影視與加值服務的好處？
-                </h2>
+              <div class="lottery-wrapper init active">
+                <img src="./public/img/img.png" alt="">
+                <button class="btn btn-green-deeper btn-join">
+                    <p class="btn__text">立即參加</p>
+                  </button>
               </div>
-              <div class="lottery-task__content">
-                <button class="btn btn-green-deeper">
-                  <p class="btn__text">YouTube Premium</p>
-                </button>
-                <button class="btn btn-green-deeper">
-                  <p class="btn__text">防駭守門員</p>
-                </button>
-                <button class="btn btn-green-deeper">
-                  <p class="btn__text">以上皆是</p>
-                </button>
+              <div class="lottery-wrapper task">
+                <div class="sec-title">
+                  <h2 class="text-border">
+                    何者是從精采生活+訂購影視與加值服務的好處？
+                  </h2>
+                  <h2 class="text-fill">
+                    何者是從精采生活+訂購影視與加值服務的好處？
+                  </h2>
+                </div>
+                <div class="lottery-task__content">
+                  <button class="btn btn-green-deeper">
+                    <p class="btn__text">YouTube Premium</p>
+                  </button>
+                  <button class="btn btn-green-deeper">
+                    <p class="btn__text">防駭守門員</p>
+                  </button>
+                  <a href="表單連結" class="btn btn-green-deeper all">
+                    <p class="btn__text">以上皆是</p>
+                  </a>
+                </div>
+              </div>
+              <div class="lottery-wrapper wrong">
+                <div class="sec-title">
+                  <h2 class="text-border">
+                    很可惜答錯了！
+                  </h2>
+                  <h2 class="text-fill">
+                    很可惜答錯了！
+                  </h2>
+                </div>
+                <p class="text">
+                  解答內容解答內容解答內容解答內容解答內容解答內容解答內容解答內容解答內容解答內容解答內容
+                </p>
+                <button class="btn btn-green-deeper btn-next">
+                    <p class="btn__text">下一題</p>
+                  </button>
               </div>
             </div>
           </div>
@@ -493,7 +588,7 @@
             <button class="btn btn-orange">＋ 單月租 $30 元</button>
           </div>
         </div>
-        <img class="top-up__bg" src="./public/img/bg-bottom.png" alt="">
+        <img class="top-up__bg" src="./public/img/bg-bottom.png" alt="" />
       </div>
     </div>
 

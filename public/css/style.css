@@ -298,7 +298,7 @@ section#footer.no-footer-logo .footer-scroll-top {
   width: fit-content;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.32);
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.32);
-  color: var(--white);
+  color: var(--white) !important;
   padding: 0;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -350,6 +350,10 @@ section#footer.no-footer-logo .footer-scroll-top {
   background-color: transparent;
 }
 
+.btn__text {
+  color: var(--white);
+}
+
 .point__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,6 +385,7 @@ section#footer.no-footer-logo .footer-scroll-top {
 .point__content > p {
   font-size: 16px;
   font-weight: 500;
+  color: #fff !important;
 }
 
 .point__content > p .num {
@@ -726,6 +731,28 @@ section#footer.no-footer-logo .footer-scroll-top {
   pointer-events: none;
 }
 
+.lottery-wrapper.task, .lottery-wrapper.wrong {
+  display: none;
+}
+
+.lottery-wrapper.init {
+  display: block;
+}
+
+.lottery-wrapper.init img {
+  width: calc(100% - 24px);
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.lottery-wrapper.init button {
+  width: 100%;
+}
+
+.lottery-wrapper.wrong button {
+  width: 100%;
+}
+
 .prize-title {
   position: relative;
   width: -webkit-fit-content;
@@ -831,7 +858,7 @@ section#footer.no-footer-logo .footer-scroll-top {
 
 .lucky-bag .nav-tabs .nav-link {
   width: 100%;
-  padding: 16px 36px 16px 32px;
+  padding: 16px 32px 16px 28px;
   font-size: 24px;
   color: var(--white);
   position: relative;

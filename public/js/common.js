@@ -1,13 +1,19 @@
+$(".gotoelement").click(function () {
+  let target = $(this).data("target");
+  let top = $(target).offset().top - 60;
+  $("html, body").animate({ scrollTop: top }, 300);
+});
+
 $(".btn-join").click(function () {
-    $(".lottery-wrapper.init").fadeOut(300);
-    $(".lottery-wrapper.task").fadeIn(300);
+  $(".lottery-wrapper.init").fadeOut(300);
+  $(".lottery-wrapper.task").fadeIn(300);
 });
 
 $(".lottery-task__content .btn").click(function () {
-    if (!$(this).hasClass("all")) {
-        $(".lottery-wrapper.task").fadeOut(300);
+  if (!$(this).hasClass("all")) {
+    $(".lottery-wrapper.task").fadeOut(300);
     $(".lottery-wrapper.wrong").fadeIn(300);
-    }
+  }
 });
 
 $(".btn-next").click(function () {

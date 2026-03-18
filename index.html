@@ -215,7 +215,11 @@
               活動期間每週回訪參加精彩生活 +
               知識大考驗，週週抽樂園門票、上網流量券 (每人每週限中一次)
             </p>
-            <button class="btn-icon" data-bs-toggle="modal" data-bs-target="#prize-list">
+            <button
+              class="btn-icon"
+              data-bs-toggle="modal"
+              data-bs-target="#prize-list"
+            >
               <img src="./public/img/info2.svg" alt="" />
             </button>
           </div>
@@ -263,8 +267,17 @@
                 </button>
               </div>
             </div>
+            <img
+              class="lottery-dec d-md-block d-none"
+              src="./public/img/dec-d.png"
+              alt=""
+            />
           </div>
-          <img class="lottery-dec" src="./public/img/dec.png" alt="" />
+          <img
+            class="lottery-dec d-md-none"
+            src="./public/img/dec.png"
+            alt=""
+          />
         </div>
 
         <div class="prize">
@@ -276,7 +289,7 @@
                   <h2 class="text-fill">每週釋出獎項列表</h2>
                 </div>
                 <!-- <button
-                  class="btn-icon btn-info"
+                  class="btn-icon"
                   data-bs-toggle="modal"
                   data-bs-target="#prize-list"
                 >
@@ -339,9 +352,22 @@
       </div>
 
       <div class="lucky-bag" id="newnew">
-        <img class="lucky-bag__bg" src="./public/img/bg2.png" alt="" />
-        <img class="lucky-bag__title" src="./public/img/title3.png" alt="" />
+        <img
+          class="lucky-bag__bg d-md-none"
+          src="./public/img/bg2.png"
+          alt=""
+        />
         <div class="container">
+          <img
+            class="lucky-bag__title d-md-none"
+            src="./public/img/title3.png"
+            alt=""
+          />
+          <img
+            class="lucky-bag__title d-md-block d-none"
+            src="./public/img/title3-d.png"
+            alt=""
+          />
           <p class="intro">
             完成行動新客任務、續約快閃任務或音浪任務，即可獲得超值加碼好禮。
           </p>
@@ -388,7 +414,7 @@
                   <h2 class="text-border">新客限定任務</h2>
                   <h2 class="text-fill">新客限定任務</h2>
                   <button
-                    class="btn-icon btn-info"
+                    class="btn-icon"
                     data-bs-toggle="modal"
                     data-bs-target="#prize-list"
                   >
@@ -420,27 +446,42 @@
                     </div>
                   </div>
                 </div>
-                <div class="sec new-task-intro">
-                  <h3 class="new-task-intro__title">5G</h3>
-                  <p class="new-task-intro__text">
-                    申請精彩 5G 任一方案任一方案贈送 Hami Point 300 點，加贈 88
-                    GB 上網流量券。
-                  </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="sec new-task-intro">
+                      <h3 class="new-task-intro__title">5G</h3>
+                      <p class="new-task-intro__text">
+                        申請精彩 5G 任一方案任一方案贈送 Hami Point 300 點，加贈
+                        88 GB 上網流量券。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="sec new-task-intro">
+                      <h3 class="new-task-intro__title">4G</h3>
+                      <p class="new-task-intro__text">
+                        申請指定方案贈送 Hami Point 200 點，加贈 68 GB
+                        上網流量券。
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="sec new-task-intro">
-                  <h3 class="new-task-intro__title">4G</h3>
-                  <p class="new-task-intro__text">
-                    申請指定方案贈送 Hami Point 200 點，加贈 68 GB 上網流量券。
-                  </p>
+                <div class="new-cta">
+                  <button
+                    class="btn btn-orange"
+                    data-bs-toggle="modal"
+                    data-bs-target="#check-list"
+                  >
+                    出發！解任務
+                  </button>
+                  <button
+                    class="new-cta__comment"
+                    data-bs-toggle="modal"
+                    data-bs-target="#prize-list"
+                  >
+                    <img src="./public/img/btn-bonus.png" alt="" />
+                  </button>
                 </div>
-              </div>
-              <div class="new-cta">
-                <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#check-list">出發！解任務</button>
-                <button class="new-cta__comment" data-bs-toggle="modal" data-bs-target="#prize-list">
-                <img
-                  src="./public/img/btn-bonus.png"
-                  alt=""
-                /></button>
               </div>
               <div class="sec increase" id="hito">
                 <img
@@ -459,25 +500,31 @@
                     <h2 class="text-fill">限時加碼！</h2>
                   </div>
                   <button
-                    class="btn-icon btn-info"
+                    class="btn-icon"
                     data-bs-toggle="modal"
                     data-bs-target="#prize-list"
                   >
                     <img src="./public/img/info2.svg" alt="" />
                   </button>
                 </div>
-                <img
-                  class="increase-pic"
-                  src="./public/img/img-rbt.png"
-                  alt=""
-                />
-                <div class="sec m-0 increase__text">
-                  <p class="text sm m-0 text-start">
-                    訂閱 KKBOX 或 Youtube Premium 任一年方案，加碼抽
-                    <span class="highlight"
-                      >2026 Hito 流行音樂獎門票 10 組 (一組兩張)</span
-                    >。
-                  </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      class="increase-pic"
+                      src="./public/img/img-rbt.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="sec m-0 increase__text">
+                      <p class="text sm m-0 text-start">
+                        訂閱 KKBOX 或 Youtube Premium 任一年方案，加碼抽
+                        <span class="highlight"
+                          >2026 Hito 流行音樂獎門票 10 組 (一組兩張)</span
+                        >。
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <svg style="display: none">
                   <filter
@@ -521,25 +568,30 @@
                 <div class="sec-title">
                   <h2 class="text-border">續約快閃活動</h2>
                   <h2 class="text-fill">續約快閃活動</h2>
+                  <button
+                    class="btn-icon"
+                    data-bs-toggle="modal"
+                    data-bs-target="#prize-list"
+                  >
+                    <img src="./public/img/info2.svg" alt="" />
+                  </button>
                 </div>
-                <button class="btn-icon btn-info" data-bs-toggle="modal" data-bs-target="#prize-list">
-                  <img src="./public/img/info.svg" alt="" />
-                </button>
-                <div class="give-point glass m-0">
-                  <div class="point">
-                    <div class="point__content m-0">
-                      <img src="./public/img/hami point 1.png" alt="" />
-                      <p><span class="num">100</span>點</p>
-                    </div>
+                <div class="point">
+                  <div class="point__content m-0">
+                    <img src="./public/img/hami point 1.png" alt="" />
+                    <p><span class="num">100</span>點</p>
                   </div>
-                  <p class="text sm">
+                  <p class="point__text">升續限定</p>
+                </div>
+                <div class="give-point glass">
+                  <p class="text">
                     <span class="highlight">4/7 前升級續約</span>精彩 5G
                     購機約/贈點約(限租期 24 個月以上)月繳 799 元方案(含)以上贈
                     Hami Point 150 點。
                   </p>
                 </div>
+                <button class="btn btn-orange w-100">出發！解任務</button>
               </div>
-              <button class="btn btn-orange w-100">出發！解任務</button>
             </div>
           </div>
         </div>
@@ -553,7 +605,11 @@
                 <h2 class="text-border">音浪任務 不用抽直接送！</h2>
                 <h2 class="text-fill">音浪任務 不用抽直接送！</h2>
               </div>
-              <button class="btn-icon" data-bs-toggle="modal" data-bs-target="#prize-list">
+              <button
+                class="btn-icon"
+                data-bs-toggle="modal"
+                data-bs-target="#prize-list"
+              >
                 <img src="./public/img/info2.svg" alt="" />
               </button>
             </div>
@@ -572,7 +628,7 @@
                 ><span class="highlight">加碼送 Hami Point 100 點。</span>
               </p>
             </div>
-            <div class="tip-1">
+            <div class="tip-1 tip-wrap">
               <div class="tip">
                 <div class="tip-tag">
                   <img src="./public/img/flower.png" alt="" />
@@ -583,40 +639,48 @@
                   <h3 class="text-fill">先訂閱</h3>
                 </div>
               </div>
-              <div class="plan sec">
-                <div class="plan__wrapper">
-                  <img src="./public/img/logo-kk.png" alt="" />
-                  <div class="plan__info">
-                    <h3>KKBOX 年約方案</h3>
-                    <p>無損音質破億首歌無限暢聽。</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="plan sec">
+                    <div class="plan__wrapper">
+                      <img src="./public/img/logo-kk.png" alt="" />
+                      <div class="plan__info">
+                        <h3>KKBOX 年約方案</h3>
+                        <p>無損音質破億首歌無限暢聽。</p>
+                      </div>
+                    </div>
+                    <button class="btn btn-orange">$ 89 /月 起</button>
+                    <div class="plan-tag">
+                      <p>抽Hito門票</p>
+                      <!-- <div class="plan-tag-text">
+                        <p class="text-border">抽Hito門票</p>
+                        <p class="text-fill">抽Hito門票</p>
+                      </div> -->
+                    </div>
                   </div>
                 </div>
-                <button class="btn btn-orange">$ 89 /月 起</button>
-                <div class="plan-tag">
-                  <div class="plan-tag-text">
-                    <p class="text-border">抽Hito門票</p>
-                    <p class="text-fill">抽Hito門票</p>
-                  </div>
-                </div>
-              </div>
-              <div class="plan sec">
-                <div class="plan__wrapper">
-                  <img src="./public/img/logo-yt.png" alt="" />
-                  <div class="plan__info">
-                    <h3>Youtube Premium</h3>
-                    <p>免看廣告、背景播放、離線聽。</p>
-                  </div>
-                </div>
-                <button class="btn btn-orange">$ 179 /月 起</button>
-                <div class="plan-tag">
-                  <div class="plan-tag-text">
-                    <p class="text-border">抽Hito門票</p>
-                    <p class="text-fill">抽Hito門票</p>
+                <div class="col-md-6">
+                  <div class="plan sec">
+                    <div class="plan__wrapper">
+                      <img src="./public/img/logo-yt.png" alt="" />
+                      <div class="plan__info">
+                        <h3>Youtube Premium</h3>
+                        <p>免看廣告、背景播放、離線聽。</p>
+                      </div>
+                    </div>
+                    <button class="btn btn-orange">$ 179 /月 起</button>
+                    <div class="plan-tag">
+                        <p>抽Hito門票</p>
+                      <!-- <div class="plan-tag-text"> -->
+                        <!-- <p class="text-border">抽Hito門票</p>
+                        <p class="text-fill">抽Hito門票</p> -->
+                      <!-- </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tip-2">
+            <div class="tip-2 tip-wrap">
               <div class="tip">
                 <div class="tip-tag">
                   <img src="./public/img/flower.png" alt="" />
@@ -627,62 +691,81 @@
                   <h3 class="text-fill">加購精選加值服務</h3>
                 </div>
               </div>
-              <div class="plan sec">
-                <div class="plan__wrapper">
-                  <img src="./public/img/logo-one.png" alt="" />
-                  <div class="plan__info">
-                    <h3>
-                      Google One <br /><span class="sm"
-                        >(2TB 含 Plus 方案)</span
-                      >
-                    </h3>
-                    <p>
-                      雲端+AI雙重升級！享有Google
-                      AIPlus方案，輕鬆解決日常大小事。
-                    </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="plan sec">
+                    <div class="plan__wrapper">
+                      <img src="./public/img/logo-one.png" alt="" />
+                      <div class="plan__info">
+                        <h3>
+                          Google One <br /><span class="sm"
+                            >(2TB 含 Plus 方案)</span
+                          >
+                        </h3>
+                        <p>
+                          雲端+AI雙重升級！享有Google
+                          AIPlus方案，輕鬆解決日常大小事。
+                        </p>
+                      </div>
+                    </div>
+                    <button class="btn btn-green-deeper">
+                      ＋ 月租 $253 元
+                    </button>
+                    <div class="plan-tag recommend">
+                      <p>最推薦</p>
+                    </div>
                   </div>
                 </div>
-                <button class="btn btn-green-deeper">＋ 月租 $253 元</button>
-                <div class="plan-tag recommend">
-                  <p>最推薦</p>
-                </div>
-              </div>
-              <div class="plan sec">
-                <div class="plan__wrapper">
-                  <img src="./public/img/logo-hami.png" alt="" />
-                  <div class="plan__info">
-                    <h3>Hami 書城</h3>
-                    <p>
-                      閱讀控看這邊！萬本書報雜誌無限暢讀，整座圖書館裝進你的口袋。
-                    </p>
+                <div class="col-md-6">
+                  <div class="plan sec">
+                    <div class="plan__wrapper">
+                      <img src="./public/img/logo-hami.png" alt="" />
+                      <div class="plan__info">
+                        <h3>Hami 書城</h3>
+                        <p>
+                          閱讀控看這邊！萬本書報雜誌無限暢讀，整座圖書館裝進你的口袋。
+                        </p>
+                      </div>
+                    </div>
+                    <button class="btn btn-green-deeper">＋ 月租 $89 元</button>
+                    <div class="plan-tag recommend">
+                      <p>最推薦</p>
+                    </div>
                   </div>
                 </div>
-                <button class="btn btn-green-deeper">＋ 月租 $89 元</button>
-                <div class="plan-tag recommend">
-                  <p>最推薦</p>
-                </div>
-              </div>
-              <div class="plan sec">
-                <div class="plan__wrapper">
-                  <img src="./public/img/logo-pt.png" alt="" />
-                  <div class="plan__info">
-                    <h3>防駭守門員</h3>
-                    <p>
-                      與詐騙網頁、簡訊 Say NO！個資再也不外洩，家中長輩必備！
-                    </p>
+                <div class="col-md-6">
+                  <div class="plan sec">
+                    <div class="plan__wrapper">
+                      <img src="./public/img/logo-pt.png" alt="" />
+                      <div class="plan__info">
+                        <h3>防駭守門員</h3>
+                        <p>
+                          與詐騙網頁、簡訊 Say
+                          NO！個資再也不外洩，家中長輩必備！
+                        </p>
+                      </div>
+                    </div>
+                    <button class="btn btn-green-deeper">
+                      ＋ 單月租 $50 元
+                    </button>
                   </div>
                 </div>
-                <button class="btn btn-green-deeper">＋ 單月租 $50 元</button>
-              </div>
-              <div class="plan sec">
-                <div class="plan__wrapper">
-                  <img src="./public/img/logo-rbt.png" alt="" />
-                  <div class="plan__info">
-                    <h3>來電答鈴</h3>
-                    <p>不只是答鈴！一杯飲料錢就能體驗最新 AI 自錄個性答鈴。</p>
+                <div class="col-md-6">
+                  <div class="plan sec">
+                    <div class="plan__wrapper">
+                      <img src="./public/img/logo-rbt.png" alt="" />
+                      <div class="plan__info">
+                        <h3>來電答鈴</h3>
+                        <p>
+                          不只是答鈴！一杯飲料錢就能體驗最新 AI 自錄個性答鈴。
+                        </p>
+                      </div>
+                    </div>
+                    <button class="btn btn-green-deeper">
+                      ＋ 單月租 $30 元
+                    </button>
                   </div>
                 </div>
-                <button class="btn btn-green-deeper">＋ 單月租 $30 元</button>
               </div>
             </div>
             <div class="top-up">
@@ -709,7 +792,8 @@
             </div>
           </div>
         </div>
-        <img class="give__bg" src="./public/img/bg-bottom.png" alt="" />
+        <img class="give__bg d-md-none" src="./public/img/bg-bottom.png" alt="" />
+        <img class="give__bg d-md-block d-none" src="./public/img/bg-bottom-d.png" alt="" />
       </div>
     </div>
 
@@ -722,8 +806,7 @@
             </button>
           </div>
           <div class="col-6">
-            <button
-              class="btn btn-green gotoelement" data-target="#newnew">
+            <button class="btn btn-green gotoelement" data-target="#newnew">
               <p class="btn__text">看任務清單</p>
             </button>
           </div>

@@ -1,6 +1,12 @@
 $(".gotoelement").click(function () {
   let target = $(this).data("target");
-  let top = $(target).offset().top - 60;
+  let headerHeight;
+  if ($(window).width() > 768) {
+    headerHeight = 107;
+  } else {
+    headerHeight = 60;
+  }
+  let top = $(target).offset().top - headerHeight;
   $("html, body").animate({ scrollTop: top }, 300);
 });
 
